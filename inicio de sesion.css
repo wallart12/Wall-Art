@@ -1,0 +1,87 @@
+
+
+body{
+    margin: 0%;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    background: linear-gradient(150deg,rgb(247, 244, 244),rgb(50, 93, 212));
+    background-size: 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+    width: 50%;
+    transform: translate(50%);
+    background-size: cover;
+    margin-top: 30px;
+    
+}
+*{
+    font-family: "Montserrat", sans-serif;
+}
+    
+
+
+
+.titulo{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: grid;
+   
+    text-align: center;
+    
+    
+}
+.inicio{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: white;
+    border-radius: 40px;
+    margin-top: 30px;
+   
+   
+}
+.correo{
+    width: 50%;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 15px;
+   color: rgb(0, 89, 255);
+}
+.contraseña{
+    width: 50%;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 15px;
+   color: rgb(0, 89, 255);
+}    
+
+
+
+    
+.boton{
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    place-items: center;
+    margin-bottom: 30px;
+    width: 200px;
+    margin-top: 25px;
+    color: rgb(238, 238, 238);
+    background-color: rgb(0, 153, 255);
+}
+#text{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: rgb(0, 89, 255);
+    
+}
+#password{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: rgb(0, 89, 255);   
+}

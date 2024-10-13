@@ -1,0 +1,172 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
+
+
+body {
+  max-width: 100%;
+  margin: auto;
+  background: linear-gradient(150deg,rgb(247, 244, 244), #20B2AA);
+  height: 700vh;
+  
+}
+  
+  
+  
+
+
+
+
+
+.container{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+header{
+  background-color: white;
+  padding-bottom: 37px;
+  
+}
+.menu{
+  position: absolute;
+  top: 29px;
+  left: 0;
+  right: 0;
+  transform: translateX(-80px);
+  align-items: center;
+  justify-content: space-between;
+}
+.content{
+
+  min-height: 100px;
+  
+
+
+}
+.navbar{
+  transform: translate(350px,-50px);
+}
+.logo{
+  font-size: 65px;
+  color: #20B2AA;
+  font-weight: bold;
+  transform: translateX(-80px);
+} 
+.menu.navbar ul li{
+position: relative; 
+float: left;
+}
+.menu.navbar ul  a{
+  font-size: 20px;
+  padding: 30px;
+  color: #0b0b0b;
+  display: block;
+  font-weight: bold;
+}
+.menu.navbar ul li a:hover{
+  color: #20B2AA;
+}
+.navbar ul a{
+  color: #20B2AA;
+  text-decoration: none;
+  margin: 20px;
+} 
+.navbar ul a:hover{
+  background-color:#20B2AA;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+} 
+
+
+.formulario
+ {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 300px;
+  border-radius: 15px;
+  transform: translate(80vh,10vh);
+  
+}
+
+
+.video-section {
+  margin: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translateX(12%);
+  flex-direction: column;
+  top: -220px;
+}
+
+
+.video {
+  width: 300px;
+  height: 200px;
+  margin-top: 400px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 5px;
+  width: 1002px;
+  height: 800px;
+  
+  
+}
+
+
+.video-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.video-description {
+  font-size: 14px;
+  
+}
+.v{
+margin-top: 20px;
+}
+.t{
+  margin-top: 20px;
+}
+.d{
+  margin-top: 20px;
+}
+.b{
+
+  transform: translate(97.5vh,-1vh);
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#bbb{
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transform: translate(98vh);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="../css/aprende.css">
+  <title>Aprendamos Entre Todos</title>
+  
+</head>
+<body>
+   <header>
+        <div class="content">
+            <div class="menu container">
+                <a href="#" class="logo">WALL ART</a>
+                 <nav class="navbar">
+                    <ul>
+                        <a  href="inicio.html">INICIO</a>
+                        <a  href="quienes somos.html">QUIENES SOMOS</a>
+                        <a  href="nusetros servicios.html">NUESTRO SERVICIO</a>
+                        <a  href="Galeria.html">GALERIA</a>
+                        <a  href="aprende.html">APRENDE</a>
+                        <a  href="eleccion.html">REGISTRO</a>
+                        <a  href="perfil.php">PERFIL</a>
+                    </ul>  
+                </nav>
+            </div>
+        </div>               
+     </header>
+ 
+  <button id="bbb">subir tutorial</button>
+  <div id="form" style="display: none;">
+  <section class="formulario" >
+    <input type="file" id="video-input" class="v" accept="video/*">
+    <input type="text" id="title-input" class="t" placeholder="Título del video">
+    <textarea id="description-input" class="d" placeholder="Descripción del video"></textarea>
+  </section>
+</div>
+  <button id="upload-button" class="b" style="display: none;">Subir video</button>
+  <section class="video-section" id="video-section">
+    <!-- Aquí se mostrarán los videos subidos -->
+  </section>
+  
+  <script>
+
+const boton = document.getElementById('bbb');
+    const formulario = document.getElementById('form');  
+    
+    const videoInput = document.getElementById('video-input');
+    const titleInput = document.getElementById('title-input');
+    const descriptionInput = document.getElementById('description-input');
+    const uploadButton = document.getElementById('upload-button');
+    const videoSection = document.getElementById('video-section');
+    let currentVideo = null;
+
+
+
+
+
+boton.addEventListener('click', () => {
+
+  formulario.style.display = 'block';
+  uploadButton.style.display = 'block';
+});
+uploadButton .addEventListener('click', () => {
+    formulario.style.display = 'none';
+    uploadButton.style.display = 'none';
+});
+   
+
+    uploadButton.addEventListener('click', () => {
+      const file = videoInput.files[0];
+      const title = titleInput.value;
+      const description = descriptionInput.value;
+      const video = document.createElement('video');
+      video.width = 1000;
+      video.height = 600;
+      video.controls = true;
+      video.src = URL.createObjectURL(file);
+
+      const videoContainer = document.createElement('div');
+      videoContainer.className = 'video';
+
+      const videoTitle = document.createElement('h1');
+      videoTitle.className = 'video-title';
+      videoTitle.textContent = title;
+
+      const videoDescription = document.createElement('p');
+      videoDescription.className = 'video-description';
+      videoDescription.textContent = description;
+
+      videoContainer.appendChild(videoTitle);
+      videoContainer.appendChild(videoDescription);
+      videoContainer.appendChild(video);
+
+      videoSection.appendChild(videoContainer);
+
+      video.addEventListener('play', () => {
+        if (currentVideo) {
+          currentVideo.pause();
+        }
+        currentVideo = video;
+      });
+
+      video.addEventListener('ended', () => {
+        currentVideo = null;
+      });
+    });
+  
+  </script>
+</body>
+</html>

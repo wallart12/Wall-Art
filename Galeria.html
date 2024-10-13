@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="../css/GALERIA.css">
+    
+</head>
+<header>
+    <div class="content">
+        <div class="menu container">
+            <a href="#" class="logo">WALL ART</a>
+             <nav class="navba">
+                <ul>
+                  <a  href="inicio.html">INICIO</a>
+                  <a  href="quienes somos.html">QUIENES SOMOS</a>
+                  <a  href="nusetros servicios.html">NUESTRO SERVICIO</a>
+                  <a  href="Galeria.html">GALERIA</a>
+                  <a  href="aprende.html">APRENDE</a>
+                  <a  href="eleccion.html">REGISTRO</a>
+                  <a  href="perfil.php">PERFIL</a>
+                </ul>  
+            </nav>
+        </div>
+    </div>               
+ </header>
+<body>
+    <div class="navbar">
+        <img src="../img/logo.png" alt="Logo" onclick="location.href='#'">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="settings">⚙️</div>
+    </div>
+
+
+   
+    <div id="upload-form-container">
+   
+      <button id="btn-upload" class="botom">Subir imagen</button>
+  
+  
+      <div id="upload-form" style="display: none;">
+        <form id="upload-form-form" class="formm">
+          <input type="file" id="image" name="image" placeholder="imagen" required><br><br>
+          <input type="text" id="name" name="name" placeholder="nobre de la imagen" required><br><br>
+          <textarea id="description" name="description" placeholder="Descripción" required></textarea><br><br>
+          <input type="number" id="price" name="price" placeholder="precio" required><br><br>  
+          <input type="submit" id="bbb" value="Subir">
+        </form>
+      </div>
+      <div id="forma">
+      <form id="formar" class="f1" style="display: none;">
+          <input type="number" name="numero" id="f" placeholder="numero de targeta bancaria">
+          <input type="password" name="contraseña" id="f1" placeholder="contraseña">
+          <button id="c">finalizar compra</button>
+          <button id="cal">cancelar compra</button>
+      </form>
+  </div>
+    
+        
+        <div id="uploaded-images"></div>
+      </div>
+    
+      <script>
+        const btnUpload = document.getElementById('btn-upload');
+        const uploadForm = document.getElementById('upload-form');
+        const uploadFormForm = document.getElementById('upload-form-form');
+        const uploadedImages = document.getElementById('uploaded-images');
+        btnUpload.addEventListener('click', () => {
+          uploadForm.style.display = 'block';
+        });
+    
+        uploadFormForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const formData = new FormData(uploadFormForm);
+          const image = formData.get('image');
+          const name = formData.get('name');
+          const description = formData.get('description');
+          const price = formData.get('price');
+          const pay = formData.get('pay');
+       
+
+                           
+          const uploadedImageHTML = `
+            <div class="uploaded-image">
+              <img src="${URL.createObjectURL(image)}" alt="${name}">
+              <div class="image-info">
+                <p>Nombre: ${name}</p>
+                <p>Descripción: ${description}</p>
+                <p>Precio: ${price}</p>
+                <button class="b" id="b"> Comprar</button>
+                <a href="comentario.html"><button class="b1" id="b1">Comentarios</button></a>
+              </div>
+            </div>
+          `;
+          uploadedImages.innerHTML += uploadedImageHTML;
+          uploadForm.style.display = 'none';
+        
+
+          
+
+          const forma= document.getElementById('forma');
+        const formar = document.getElementById('formar');
+        const b = document.getElementById('b')
+          b.addEventListener('click', () => {
+          formar.style.display = 'block';
+          cal.addEventListener('click' , () => 
+          
+          { forma.style.display = 'none';
+          });          
+        });
+
+        });
+
+    
+   
+</script>
+
+        
+     
+    
+   
+</body>
+</html>
