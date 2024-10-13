@@ -1,0 +1,145 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
+
+
+body {
+    max-width: 100%;
+    margin: auto;
+    background: linear-gradient(150deg,rgb(247, 244, 244), #ff0000);
+    height: 200vh;
+}
+    
+    
+    
+
+
+
+
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+header{
+    background-color: white;
+    padding-bottom: 37px;
+    
+}
+.menu{
+    position: absolute;
+    top: 29px;
+    left: 0;
+    right: 0;
+    transform: translateX(-80px);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content{
+  
+    min-height: 100px;
+    
+  
+  
+  }
+  .navbar{
+    transform: translate(350px,-50px);
+  }
+  .logo{
+    font-size: 65px;
+    color: #ff0000;
+    font-weight: bold;
+    transform: translateX(-80px);
+  } 
+.menu.navbar ul li{
+position: relative; 
+float: left;
+}
+ .menu.navbar ul  a{
+    font-size: 20px;
+    padding: 30px;
+    color: #0b0b0b;
+    display: block;
+    font-weight: bold;
+ }
+ .menu.navbar ul li a:hover{
+    color: #ff0000;
+ }
+ .navbar ul a{
+    color: #ff0000;
+    text-decoration: none;
+    margin: 20px;
+ } 
+ .navbar ul a:hover{
+    background-color:#ff0000;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+ } 
+
+.conta{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(30%);
+    border-radius: 30px;
+}
+
+
+
+.comentarios {
+    margin-top: 20px;
+    max-width: 500px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    overflow-wrap: break-word; 
+}
+
+h1{
+    text-align: center;
+
+}
+
+
+
+
+textarea {
+    width: 80%;
+    height: 60px;
+    margin-top: 10px;
+    background: rgb(254, 250, 255);
+    border-radius: 10px;
+}
+.b{
+    transform: translate(800%,80%);
+
+}
+#btn-comentar{
+    padding: 10px 15px;
+    color: rgb(238, 238, 238);
+    background-color: #ff0000;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 120px;
+    height: 60px;
+    transform: translate(25%,-45%);
+    
+}
+
+button:hover {
+    background-color:#ff0000;
+}

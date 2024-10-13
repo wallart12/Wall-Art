@@ -1,0 +1,154 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+
+
+
+
+
+body {
+    max-width: 100%;
+    margin: auto;
+    background: linear-gradient(150deg,rgb(247, 244, 244), #975ed8);
+    width: 350vh;
+    
+}
+    
+    
+    
+
+
+
+
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+header{
+    background-color: white;
+    padding-bottom: 37px;
+    
+}
+.menu{
+   position: absolute;
+   top: 29px;
+   left: 0;
+   right: 0;
+   transform: translateX(-80px);
+   align-items: center;
+   justify-content: space-between;
+ }
+ .content{
+ 
+   min-height: 100px;
+   
+ 
+ 
+ }
+ .navbar{
+   transform: translate(350px,-50px);
+ }
+ .logo{
+   font-size: 65px;
+   color:#975ed8;
+   font-weight: bold;
+   transform: translateX(-80px);
+ } 
+.menu.navbar ul li{
+position: relative; 
+float: left;
+}
+ .menu.navbar ul  a{
+    font-size: 20px;
+    padding: 30px;
+    color: #0b0b0b;
+    display: block;
+    font-weight: bold;
+ }
+ .menu.navbar ul li a:hover{
+    color: #975ed8;
+ }
+ .navbar ul a{
+    color: #975ed8;
+    text-decoration: none;
+    margin: 20px;
+ } 
+ .navbar ul a:hover{
+    background-color:#975ed8;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+ } 
+ .persona1 {
+    transform: translate(45vh,-450vh);
+    text-align: center;
+    width: 300px;
+ }
+ .fauri{
+    width: 300px;
+    border-radius: 45px;
+    font-size: 20px;
+
+ }
+ .persona11{
+    text-align: center;
+    transform: translate(125vh,-272vh);
+    width: 300px;
+ }
+ .carrillo{
+    width: 300px;
+    border-radius: 45px;
+ }
+ 
+ .persona2{
+    transform: translate(45vh,34vh);
+    text-align: center;
+    width: 300px;
+ }
+ .sebas{
+    width: 300px;
+    border-radius: 45px;
+ }
+ .persona21{
+    text-align: center;
+    transform: translate(125vh,195vh);
+    width: 300px;
+ }
+ .cruz{
+    width: 300px;
+    border-radius: 45px;
+ }
+ .negro{
+    transform: translateX(17%);
+    text-align: center;
+    width: 150%;
+ }
+ h3,h2{
+    font-size: 30px;
+
+ }
+ h4{
+   font-size: 30px;
+ }
+ .persona{
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+ .contenedor {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 10px;
+ }
+ 
+ 

@@ -1,0 +1,191 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
+
+
+body {
+    max-width: 100%;
+    margin: auto;
+    background: linear-gradient(150deg,rgb(247, 244, 244), #C71585);
+    height: 300vh;
+}
+    
+    
+    
+
+
+
+
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+header{
+    background-color: white;
+    padding-bottom: 37px;
+    
+}
+.menu{
+    position: absolute;
+    top: 29px;
+    left: 0;
+    right: 0;
+    transform: translateX(-80px);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content{
+  
+    min-height: 100px;
+    
+  
+  
+  }
+  .navbar{
+    transform: translate(350px,-50px);
+  }
+  .logo{
+    font-size: 65px;
+    color: #C71585;
+    font-weight: bold;
+    transform: translateX(-80px);
+  } 
+.menu.navbar ul li{
+position: relative; 
+float: left;
+}
+.navbar ul a{
+    color: #C71585;
+    text-decoration: none;
+    margin: 20px;
+ } 
+ .navbar ul a:hover{
+    background-color: #C71585;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+ }
+ .pr0{
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    
+ }
+ .h0{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin: 10px;
+}
+.pr1{
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.h1{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin: 10px;
+}
+.pr2{
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.h2{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin: 10px;
+}
+.pr3{
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.h3{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin: 10px;
+}
+.pr4{
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.h4{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin: 10px;
+}
+.pr5{
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.h5{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin: 10px;
+}
+.pr6{
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.h6{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin: 10px;
+}
+.boton{
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ 
+ 

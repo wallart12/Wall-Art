@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios de img</title>
+    <link rel="stylesheet" href="../css/comentario.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="menu container">
+                <a href="#" class="logo">WALL ART</a>
+                 <nav class="navbar">
+                    <ul>
+                        <a  href="inicio.html">INICIO</a>
+                        <a  href="quienes somos.html">QUIENES SOMOS</a>
+                        <a  href="nusetros servicios.html">NUESTRO SERVICIO</a>
+                        <a  href="Galeria.html">GALERIA</a>
+                        <a  href="aprende.html">APRENDE</a>
+                        <a  href="eleccion.html">REGISTRO</a>
+                        <a  href="perfil.php">PERFIL</a>
+                    </ul>  
+                </nav>
+            </div>
+        </div>               
+     </header>
+    
+    <div class="conta">
+        <h1>Comentarios sobre la Foto</h1>
+        <h2>Comentarios:</h2>
+        <div class="comentarios">
+            
+            <li id="lista-comentarios"></li>
+        </div>
+       
+        <textarea id="nuevo-comentario" placeholder="Escribe tu comentario aquí..."></textarea>
+        <input type="submit" value="comentar" id="btn-comentar" placeholder="comentar">
+          </div>
+         
+    <script > 
+    document.getElementById('btn-comentar').addEventListener('click', function() {
+    const comentarioInput = document.getElementById('nuevo-comentario');
+    const comentarioTexto = comentarioInput.value;
+
+    if (comentarioTexto.trim() !== "") {
+        const listaComentarios = document.getElementById('lista-comentarios');
+        const nuevoComentario = document.createElement('li');
+        nuevoComentario.textContent = comentarioTexto;
+
+        listaComentarios.appendChild(nuevoComentario);
+        comentarioInput.value = ""
+    } else {
+        alert("Por favor, escribe un comentario.");
+    }
+});
+    </script>
+</body>
+</html>
+
